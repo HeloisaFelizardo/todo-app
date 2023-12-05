@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo App</title>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<nav id="navbar">
+			<a href="" class="nav-brand">Todo App</a>
+			<!-- <ul>
+				<li class="nav-item"><a href="about.html">About us</a></li>
+				<li>
+					<a href="" class="nav-item btn btn-default">Register</a>
+				</li>
+			</ul> -->
+		</nav>
+
+		<div class="container" id="main">
+			<h1>Welcome to our app</h1>
+			<p>Liste todas as suas tarefas do dia!!!</p>
+
+			<form id="todo-form">
+				<label for="todo-title">Todo</label>
+				<input
+					id="todo-title"
+					type="text"
+					placeholder="Enter your todo"
+				/>
+				<select id="todo-category">
+					<option value="work">Work</option>
+					<option value="personal">Personal</option>
+				</select>
+				<input type="submit" class="btn btn-outline" value="Add" />
+			</form>
+			<hr class="separator" />
+			<div>
+				<label>
+					Filter:
+					<select id="todo-filter">
+						<option value="">Show all</option>
+						<option value="work">Work only</option>
+						<option value="personal">Personal only</option>
+					</select>
+				</label>
+				<h3>Todos <span id="todo-count"></span></h3>
+				<ul id="todo-list"></ul>
+			</div>
+		</div>
+
+		<!-- <footer id="footer-wrapper">
+			<a href="about.html" target="_blank">About us</a>
+			<a href="contact.html" target="_blank">Contact us</a>
+		</footer> -->
+		<script src="index.js" type="module"></script>
+	</body>
+</html>
