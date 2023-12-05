@@ -1,9 +1,9 @@
 /* Projeto de aplicativo para tarefas
-Neste projeto, você escreverá o classque capacita um aplicativo Todo. O código fornecido no index.jsestá relacionado ao DOM que você aprenderá a implementar nos capítulos DOM.
+Neste projeto, você escreverá o class que capacita um aplicativo Todo. O código fornecido no index.jsestá relacionado ao DOM que você aprenderá a implementar nos capítulos DOM.
 
 Já fornecemos uma classe vazia Todos.
 
-Vimos principalmente exemplos de construtores que capturam seus parâmetros. No entanto, esse construtor não precisa capturar nada. Ele constructordefine uma variável de instância todoscomo uma matriz de objetos. Incluímos 2 tarefas de exemplo para que você possa visualizar a estrutura de cada objeto de tarefa.
+Vimos principalmente exemplos de construtores que capturam seus parâmetros. No entanto, esse construtor não precisa capturar nada. Ele constructor define uma variável de instância todos como uma matriz de objetos. Incluímos 2 tarefas de exemplo para que você possa visualizar a estrutura de cada objeto de tarefa.
 
 Você precisa implementar 7 métodos de instância para que o aplicativo funcione. Assim que você tiver os 2 primeiros métodos implementados, poderá testá-los na guia do navegador .
 
@@ -33,7 +33,7 @@ Este método deve retornar um array de objetos contendo apenas os todos que poss
 O formato dos objetos dentro do array deve permanecer o mesmo.
 
 7. getPersonalCount()
-Este método deve retornar um número representando quantos todos possuem a personalcategoria. tente manter seu código DRY (Don't Repeat Yourself).
+Este método deve retornar um número representando quantos todos possuem a personal categoria. tente manter seu código DRY (Don't Repeat Yourself).
 
 Agora você poderá filtrar todos por personalcategoria na guia do navegador . Assim, todo o projeto está completo. */
 
@@ -65,8 +65,7 @@ export default class Todos {
 
 	getWorkCount = () => this.getWork().length;
 
-	getPersonal = () =>
-		this.todos.filter((todo) => todo.category === 'personal');
+	getPersonal = () => this.todos.filter((todo) => todo.category === 'personal');
 
 	getPersonalCount = () => this.getPersonal().length;
 }
