@@ -9,9 +9,7 @@ const count = document.querySelector('#todo-count');
 
 const render = (items, itemsCount) => {
 	count.textContent = `(${itemsCount})`;
-	list.innerHTML = items
-		.map((todo) => `<li>${todo.title} [${todo.category}]</li>`)
-		.join('');
+	list.innerHTML = items.map((todo) => `<li>${todo.title} [${todo.category}]</li>`).join('');
 };
 
 const todos = new Todos();
