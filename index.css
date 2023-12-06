@@ -126,6 +126,9 @@ button.btn {
 	padding-left: 20px;
 	font-weight: 600;
 	text-transform: uppercase;
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
 }
 
 #navbar ul {
@@ -222,6 +225,7 @@ input:not(.btn):focus {
 	color: var(--black);
 	margin-right: 20px;
 }
+
 .nav-tabs a#onlink {
 	border-bottom: 7px solid var(--accent-1);
 }
